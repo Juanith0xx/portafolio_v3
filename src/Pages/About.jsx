@@ -94,7 +94,7 @@ const About = () => {
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          transition={{ duration: 0.8, ease: 'easeOut', delay: 0.2 }}
+          transition={{ duration: 0.8, ease: 'easeOut', delay: 0.5}}
         >
           Sobre mí
         </motion.h2>
@@ -104,7 +104,7 @@ const About = () => {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          transition={{ duration: 1, ease: 'easeOut', delay: 0.4 }}
+          transition={{ duration: 1, ease: 'easeOut', delay: 0.8 }}
         >
           ¡Hola! Soy <span className="font-semibold text-indigo-500">Juan Estay</span>, Full Stack Developer con +3 años creando soluciones web funcionales y atractivas. Mi enfoque está en la experiencia del usuario, el rendimiento y la elegancia del código. Certificado por MIT xPro en el stack MERN.
         </motion.p>
