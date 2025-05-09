@@ -5,27 +5,21 @@ import { FiCode, FiDatabase, FiSmartphone, FiSun } from 'react-icons/fi';
 const services = [
   {
     icon: <FiCode size={32} />,
-    title: 'Desarrollo Front-end',
+    title: 'Front-end Development',
     description:
-      'Interfaces interactivas y responsivas con React, Vite y Tailwind CSS para una UX impecable.',
+      'Interactive and responsive interfaces with React, Vite, and Tailwind CSS for a flawless UX.',
   },
   {
     icon: <FiDatabase size={32} />,
     title: 'APIs y Backend',
     description:
-      'Construcción de APIs RESTful con Node.js, Express y MongoDB/SQL garantizando escalabilidad.',
-  },
-  {
-    icon: <FiSmartphone size={32} />,
-    title: 'Apps Móviles',
-    description:
-      'PWA y soluciones híbridas que permiten llevar tu proyecto a iOS y Android sin complicaciones.',
+      'Building RESTful APIs with Node.js, Express, and MongoDB/SQL to ensure scalability.',
   },
   {
     icon: <FiSun size={32} />,
-    title: 'Optimización y SEO',
+    title: 'Optimization & SEO',
     description:
-      'Performance, accesibilidad y SEO técnico para que tu sitio cargue rápido y te encuentren primero.',
+      'Performance, accessibility, and technical SEO to make your site load fast and rank first.',
   },
 ];
 
@@ -39,19 +33,21 @@ const cardVariants = {
   hover: { scale: 1.05, boxShadow: '0 10px 20px rgba(0,0,0,0.15)' },
 };
 
+
+
 const Services = () => (
-  <section id="services" className="py-20 bg-gray-50 dark:bg-gray-900">
+  <section id="services" className="py-20 mt-4 bg-gradient-to-t from-black/50 via-transparent to-black/50 dark:bg-gray-900">
     <div className="max-w-5xl mx-auto px-4 text-center">
       <motion.h2
-        className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white mb-12"
+        className="text-3xl md:text-4xl font-bold font-[Poppins] text-white dark:text-white mb-12"
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
       >
-        Mis Servicios
+        My Services
       </motion.h2>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {services.map((svc, i) => (
           <motion.div
             key={i}
@@ -63,7 +59,7 @@ const Services = () => (
             viewport={{ once: true }}
             className="bg-white dark:bg-gray-800 rounded-2xl p-6 flex flex-col items-center text-center cursor-pointer"
           >
-            <div className="text-indigo-500 mb-4">{svc.icon}</div>
+            <div className="text-cyan-500 mb-4">{svc.icon}</div>
             <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
               {svc.title}
             </h3>
@@ -72,7 +68,7 @@ const Services = () => (
             </p>
             <a
               href="#contact"
-              className="mt-auto inline-block text-indigo-600 font-medium hover:underline"
+              className="mt-auto inline-block text-cyan-700 font-medium hover:underline"
             >
               ¡Lo quiero!
             </a>

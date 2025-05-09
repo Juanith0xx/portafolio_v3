@@ -66,7 +66,7 @@ const cardVariants = {
 };
 
 const Projects = () => (
-  <section id="projects" className="relative py-20 mt-4 bg-gradient-to-b from-black/50 via-transparent to-black/50 dark:bg-gray-900 overflow-hidden">
+  <section id="projects" className="relative py-20 mt-4 bg-gradient-to-b from-black/40 via-transparent to-black/30 dark:bg-gray-900 overflow-hidden">
     <FallingCircles />
 
     <div className="max-w-6xl mx-auto px-4">
