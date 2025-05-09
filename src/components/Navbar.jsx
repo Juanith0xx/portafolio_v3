@@ -21,7 +21,7 @@ const Navbar = () => {
           </div>
 
           {/* Menú desktop */}
-          <ul className="hidden md:flex space-x-8 font-[Roboto] text-white dark:text-gray-300 ">
+          <ul className="hidden md:flex space-x-8 font-[Poppins] text-white dark:text-gray-300 ">
             {links.map(section => (
               <li key={section}>
                 <a
