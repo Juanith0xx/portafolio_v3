@@ -44,7 +44,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="relative mt-6 py-20 bg-gradient-to-l from-rose-300 to-rose-400 dark:bg-gray-900 overflow-hidden">
+    <section id="about" className="relative mt-6 py-20 bg-gradient-to-l from-[#f5d7cc] to-[#d9beb9] dark:bg-gray-900 overflow-hidden">
       {/* Formas animadas */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {shapes.map((shape, i) => {

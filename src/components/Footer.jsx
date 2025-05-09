@@ -3,7 +3,7 @@ import { FiMail, FiPhone, FiMapPin, FiGithub, FiLinkedin, FiInstagram } from 're
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-gray-300">
+    <footer className="bg-gradient-to-br from-black/40 via-transparent to-black/80  text-gray-300">
       <div className="max-w-6xl mx-auto px-4 py-12 grid md:grid-cols-3 gap-8">
         {/* Sobre ti / Branding */}
         <div className="space-y-4">

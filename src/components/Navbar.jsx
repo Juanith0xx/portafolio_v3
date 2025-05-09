@@ -12,10 +12,10 @@ const Navbar = () => {
   return (
     <nav className="fixed inset-x-0 top-0 bg-white/10 backdrop-blur-md dark:bg-gray-900/50 shadow-md z-50">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-20">
           {/* Logo o nombre */}
-          <div className="flex items-center gap-2 text-2xl font-bold text-white">
-          <img src="/image/Logo_p.png" alt="Logo" className=" w-50 h-auto pb-4 pt-20 mt-8" />
+          <div className="flex items-center gap-6 pt-4 text-2xl font-bold text-white">
+          <img src="/image/Logo_p.png" alt="Logo" className=" w-50 h-auto pt-20 mt-10" />
             
             Juan Estay Rodriguez
           </div>
