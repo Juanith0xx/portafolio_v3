@@ -4,17 +4,17 @@ import { FiExternalLink, FiGithub } from 'react-icons/fi';
 
 const projects = [
   {
-    title: 'SistemaMuebles.cl',
+    title: 'Sistema Muebles',
     description:
-      'Tienda online de muebles con carrito de compra, pasarela de pago y panel de administración. Construido con React, Tailwind CSS y Firebase.',
+      'Plataforma web para la gestión y visualización de productos de una mueblería. Incluye catálogo dinámico, diseño responsivo y sección de contacto. Desarrollada con React, Tailwind CSS y JavaScript',
     imageUrl: '/images/sistemamuebles.png', // coloca aquí la ruta a tu captura
     demoUrl: 'https://sistemamuebles.cl',
     repoUrl: 'https://github.com/juanith0xx/sistemamuebles',
   },
   {
-    title: 'RobFU',
+    title: 'Robfu',
     description:
-      'Landing page corporativa con sección de servicios, blog y contacto. Desarrollada en Vite + React + Tailwind y desplegada en Netlify.',
+      'Sitio corporativo para empresa de maquinaria y soluciones industriales. Incluye catálogo de productos, integración con sistema ERP y diseño adaptable. Administrado desde la plataforma Odoo..',
     imageUrl: '/images/robfu.png', // ruta a la captura de RobFU
     demoUrl: 'https://robfu.com',
     repoUrl: 'https://github.com/juanith0xx/robfu',
