@@ -43,7 +43,7 @@ const FallingCircles = () => {
             repeatType: 'loop',
             ease: 'easeInOut',
           }}
-          className="absolute rounded-full bg-white/90 backdrop-blur-sm"
+          className="absolute rounded-full bg-teal-300/30"
           style={{
             width: circle.size,
             height: circle.size,
