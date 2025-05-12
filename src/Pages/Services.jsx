@@ -70,7 +70,7 @@ const Services = () => (
               href="#contact"
               className="mt-auto inline-block text-[#007595] font-[Poppins] font-medium hover:underline hover:text-xl"
             >
-              ¡Lo quiero!
+              ¡I love you!!
             </a>
           </motion.div>
         ))}

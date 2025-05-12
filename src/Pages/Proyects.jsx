@@ -7,7 +7,7 @@ const projects = [
     title: 'Sistema Muebles',
     description:
       'A web platform for managing and displaying products for a furniture store. It includes a dynamic catalog, responsive design, and a contact section. Developed with React, Tailwind CSS, and JavaScript.',
-    imageUrl: '/image/sistemamuebles.png',
+    imageUrl: '/portafolio_v3/image/sistemamuebles.png',
     demoUrl: 'https://sistemamuebles.cl',
     repoUrl: 'https://github.com/Juanith0xx/s_muebles',
   },
@@ -15,7 +15,7 @@ const projects = [
     title: 'Robfu',
     description:
       'A corporate website for a machinery and industrial solutions company. It includes a product catalog, ERP system integration, and responsive design. Managed through the Odoo platform.',
-    imageUrl: '/image/robfu.png',
+    imageUrl: '/portafolio_v3/image/robfu.png',
     demoUrl: 'https://robfu.com'
   },
 ];

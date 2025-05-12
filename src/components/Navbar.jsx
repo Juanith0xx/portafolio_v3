@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className="flex justify-between items-center h-20">
           {/* Logo o nombre */}
           <div className="flex items-center gap-6 pt-4 text-2xl font-[Poppins] font-bold text-white md:text-lg">
-          <img src="/image/Logo_p.png" alt="Logo" className="w-20 sm:w-24 md:w-28 lg:w-32 h-auto object-contain" />
+          <img src="/portafolio_v3/image/Logo_p.png" alt="Logo" className="w-20 sm:w-24 md:w-28 lg:w-32 h-auto object-contain" />
             
             Juan Estay Rodriguez
           </div>

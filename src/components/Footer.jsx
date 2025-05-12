@@ -4,18 +4,19 @@ import { FiMail, FiPhone, FiMapPin, FiGithub, FiLinkedin, FiInstagram } from 're
 const Footer = () => {
   return (
     <footer className="bg-gradient-to-br from-black/40 via-transparent to-black/80  text-gray-300">
-      <div className="max-w-6xl mt-4 mx-auto px-4 py-12 grid md:grid-cols-3 gap-8 ">
+      <div className="max-w-6xl mt-4 mx-auto px-4 py-12 grid md:grid-cols-2 gap-8 ">
         {/* Sobre ti / Branding */}
         <div className="space-y-4 ">
-          <h3 className="text-2xl font-bold font-[Poppins] underline text-white">Juan Estay</h3>
+          <h3 className="text-2xl font-bold font-[Poppins] underline text-white">Juan Estay Rodriguez.</h3>
           <p className="leading-relaxed font-semibold text-white">
-            Full Stack Developer especializado en React, Node.js y Tailwind CSS.  
-            Construyo experiencias web modernas, accesibles y con alto rendimiento.
-          </p>
+            Full Stack Developer at MERN, building modern web experiences.
+            More than a service, it's a commitment.
+            </p>
         </div>
 
         {/* Enlaces rápidos */}
-        <div>
+        {/*
+       <div>
           <h4 className="text-xl font-semibold underline text-white mb-4">Enlaces rápidos</h4>
           <ul className="space-y-2 hover:font-semibold hover:text-base hover:text-white-fluor">
             {['Inicio', 'Sobre mí', 'Proyectos', 'Servicios', 'Contacto'].map((link) => (
@@ -30,6 +31,7 @@ const Footer = () => {
             ))}
           </ul>
         </div>
+        */}
 
         {/* Contacto & redes */}
         <div className="space-y-4 hover:font-semibold hover:text-base hover:text-white-fluor">
@@ -63,10 +65,10 @@ const Footer = () => {
 
       {/* Copyright */}
       <div className="border-t border-gray-700 text-center py-4 text-sm">
-        © {new Date().getFullYear()} Juan Estay. Todos los derechos reservados.
+        © {new Date().getFullYear()} Juan Estay R. Todos los derechos reservados.
       </div>
     </footer>
   );
 };
 
-export default Footer;
+export default Footer; 

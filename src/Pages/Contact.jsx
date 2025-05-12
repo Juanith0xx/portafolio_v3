@@ -42,7 +42,8 @@ const Contact = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          Contáctame
+          
+        contact me
         </motion.h2>
         <motion.form
           ref={formRef}
@@ -65,7 +66,7 @@ const Contact = () => {
               placeholder=" "
             />
             <label className="absolute left-0 -top-4 font-semibold font-[Poppins] text-gray-500 dark:text-gray-400 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-focus:-top-4 peer-focus:text-sm transition-all">
-              Nombre
+              Name
             </label>
           </div>
 
@@ -97,7 +98,7 @@ const Contact = () => {
               placeholder=" "
             />
             <label className="absolute left-0 -top-4 font-semibold font-[Poppins] text-gray-500 dark:text-gray-400 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-focus:-top-4 peer-focus:text-sm transition-all">
-              Mensaje
+              Message
             </label>
           </div>
 
@@ -108,28 +109,28 @@ const Contact = () => {
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
           >
-            {status === 'sending' ? 'Enviando...' : 'Enviar mensaje'}
+            {status === 'sending' ? 'Enviando...' : 'Send message'}
           </motion.button>
 
           {/* Feedback */}
           {status === 'sent' && (
             <motion.p
-              className="text-center text-green-500 mt-4"
+              className="text-center text-green-500 mt-4 [Poppins]"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
             >
-              ¡Mensaje enviado con éxito!
+              ¡Message sent successfully!
             </motion.p>
           )}
           {status === 'error' && (
             <motion.p
-              className="text-center text-red-500 mt-4"
+              className="text-center text-red-500 mt-4 font-[Poppins]"
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
             >
-              Hubo un error. Intenta nuevamente más tarde.
+              There was an error. Please try again later.
             </motion.p>
           )}
         </motion.form>

@@ -64,7 +64,7 @@ const HeroSelection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: 'easeOut' }}
         >
-          Lleva tu proyecto al siguiente nivel
+          Take your project to the next level
         </motion.h1>
 
         <motion.p
@@ -73,8 +73,7 @@ const HeroSelection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 1.2, ease: 'easeOut' }}
         >
-          Soy Juan Estay, Full Stack Developer especializado en React, Node.js y Tailwind CSS.  
-          Diseño y construyo aplicaciones web escalables y llenas de estilo.
+         I am Juan Estay, a Full Stack Developer in continuous growth, specializing in React, Node.js, and Tailwind CSS. I focus on designing and building scalable, stylish web applications while refining my expertise and skills.
         </motion.p>
 
         <motion.a
@@ -85,7 +84,7 @@ const HeroSelection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 1.2, ease: 'easeOut' }}
         >
-          ¡Contrátame ahora!
+          ¡Hire me now!
         </motion.a>
       </div>
     </section>
