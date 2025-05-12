@@ -82,7 +82,7 @@ const About = () => {
         </motion.h2>
 
         <motion.p
-          className="text-lg text-white font-semibold dark:text-gray-300 mb-10 leading-relaxed"
+          className="text-lg text-white font-semibold font-[Poppins] dark:text-gray-300 mb-10 leading-relaxed md:text-lg "
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}

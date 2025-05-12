@@ -59,16 +59,16 @@ const Services = () => (
             viewport={{ once: true }}
             className="bg-white dark:bg-gray-800 rounded-2xl p-6 flex flex-col items-center text-center cursor-pointer"
           >
-            <div className="text-cyan-500 mb-4">{svc.icon}</div>
+            <div className="text-[#007595] mb-4">{svc.icon}</div>
             <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
               {svc.title}
             </h3>
-            <p className="text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+            <p className="text-gray-700 dark:text-gray-300 font-[Poppins] mb-4 leading-relaxed">
               {svc.description}
             </p>
             <a
               href="#contact"
-              className="mt-auto inline-block text-cyan-700 font-medium hover:underline"
+              className="mt-auto inline-block text-[#007595] font-[Poppins] font-medium hover:underline hover:text-xl"
             >
               ¡Lo quiero!
             </a>

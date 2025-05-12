@@ -74,7 +74,7 @@ const SkillGrid = () => (
           {group.items.map((item, i) => (
             <div
               key={i}
-              className="relative group w-16 h-16 flex items-center justify-center bg-white font-[Poppins] dark:bg-gray-700 rounded-full shadow-md cursor-pointer transform transition-transform duration-300 hover:scale-130"
+              className="relative group w-16 h-16 flex items-center justify-center bg-[#007595] text-white font-[Poppins] dark:bg-gray-700 rounded-full shadow-md cursor-pointer transform transition-transform duration-300 hover:scale-130"
             >
               {item.icon}
               <div className="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-300 bottom-full left-1/2 transform -translate-x-1/2 mb-2 bg-white dark:bg-gray-900 text-sm text-gray-800 dark:text-gray-200 p-2 rounded-lg shadow-lg z-20 w-32 text-center">

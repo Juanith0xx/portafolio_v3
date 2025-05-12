@@ -20,41 +20,6 @@ const projects = [
   },
 ];
 
-// Círculos animados
-const FallingCircles = () => {
-  const circles = Array.from({ length: 10 }, (_, i) => ({
-    size: Math.floor(Math.random() * 30) + 10,
-    left: `${Math.random() * 100}%`,
-    delay: Math.random() * 5,
-    duration: Math.random() * 5 + 3,
-  }));
-
-  return (
-    <div className="absolute inset-0 overflow-hidden -z-10">
-      {circles.map((circle, i) => (
-        <motion.div
-          key={i}
-          initial={{ y: -100, opacity: 0 }}
-          animate={{ y: '110%', opacity: 0.9 }}
-          transition={{
-            delay: circle.delay,
-            duration: circle.duration,
-            repeat: Infinity,
-            repeatType: 'loop',
-            ease: 'easeInOut',
-          }}
-          className="absolute rounded-full bg-teal-300/30"
-          style={{
-            width: circle.size,
-            height: circle.size,
-            left: circle.left,
-          }}
-        />
-      ))}
-    </div>
-  );
-};
-
 const cardVariants = {
   hidden: { opacity: 0, y: 30 },
   visible: i => ({
@@ -67,7 +32,7 @@ const cardVariants = {
 
 const Projects = () => (
   <section id="projects" className="relative py-20 mt-4 bg-gradient-to-b from-black/40 via-transparent to-black/30 dark:bg-gray-900 overflow-hidden">
-    <FallingCircles />
+    {/* <FallingCircles /> eliminado */}
 
     <div className="max-w-6xl mx-auto px-4">
       <motion.h2

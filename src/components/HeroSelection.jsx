@@ -44,7 +44,7 @@ const HeroSelection = () => {
           className={`
             absolute
             ${type === 'circle' ? 'rounded-full' : 'rounded-sm'}
-            bg-teal-300/30 bg-opacity-80
+            bg-[#007595]/30 bg-opacity-80
           `}
           style={{
             width: size,
@@ -59,7 +59,7 @@ const HeroSelection = () => {
       {/* Contenido principal */}
       <div className="relative z-10 max-w-2xl text-center px-4 space-y-6">
         <motion.h1
-          className="text-4xl md:text-6xl font-extrabold"
+          className="text-4xl md:text-6xl font-extrabold font-[Poppins]"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1.2, ease: 'easeOut' }}
@@ -68,7 +68,7 @@ const HeroSelection = () => {
         </motion.h1>
 
         <motion.p
-          className="text-lg md:text-xl"
+          className="text-lg md:text-xl font-[Poppins]"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.4, duration: 1.2, ease: 'easeOut' }}
@@ -79,7 +79,7 @@ const HeroSelection = () => {
 
         <motion.a
           href="#contact"
-          className="inline-block bg-white text-indigo-600 font-semibold py-3 px-6 
+          className="inline-block bg-[#007595] text-white font-[Poppins] font-semibold py-3 px-6 
                      rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}

@@ -3,5 +3,5 @@
 
 
 body {
-  @apply bg-gradient-to-r from-teal-400 to-gray-800;
+  @apply bg-[#1F2937];
 }

@@ -7,15 +7,15 @@ const Navbar = () => {
   const toggleMenu = () => setMenuOpen(prev => !prev);
   const handleLinkClick = () => setMenuOpen(false);
 
-  const links = ['about', 'Certificates','projects', 'services', 'contact'];
+  const links = ['about', /* 'Certificates', */,'projects', 'services', 'contact'];
 
   return (
     <nav className="fixed inset-x-0 top-0 bg-white/10 backdrop-blur-md dark:bg-gray-900/50 shadow-md z-50">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           {/* Logo o nombre */}
-          <div className="flex items-center gap-6 pt-4 text-2xl font-[Poppins] font-bold text-white">
-          <img src="/image/Logo_p.png" alt="Logo" className=" w-50 h-auto pt-20 mt-10" />
+          <div className="flex items-center gap-6 pt-4 text-2xl font-[Poppins] font-bold text-white md:text-lg">
+          <img src="/image/Logo_p.png" alt="Logo" className="w-20 sm:w-24 md:w-28 lg:w-32 h-auto object-contain" />
             
             Juan Estay Rodriguez
           </div>
@@ -49,7 +49,7 @@ const Navbar = () => {
 
       {/* Menú móvil */}
       {menuOpen && (
-        <div className="md:hidden text-white font-black font-[Poppins] text-sm bg-white/10 backdrop-blur-md dark:bg-gray-900/50 ">
+        <div className="md:hidden text-white font-black font-[Poppins] text-sm dark:bg-gray-900/50 ">
           <ul className="px-4 py-2 space-y-2">
             {links.map(section => (
               <li key={section}>

@@ -8,6 +8,7 @@ import Contact from './Pages/Contact'
 import Services from './Pages/Services'
 import Proyects from './Pages/Proyects'
 import SkillGrid from './Pages/SkillGrid'
+import Certificates from './components/Certificates'
 
 function App() {
 
