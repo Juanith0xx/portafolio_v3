@@ -64,7 +64,7 @@ const Contact = () => {
               className="w-full peer bg-transparent border-b-2 border-gray-300 dark:border-gray-600 focus:border-indigo-500 outline-none py-2 text-gray-800 dark:text-gray-100"
               placeholder=" "
             />
-            <label className="absolute left-0 top-0 text-gray-500 font-semibold font-[Poppins] dark:text-gray-400 peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-focus:-top-4 peer-focus:text-sm transition-all">
+            <label className="absolute left-0 -top-4 font-semibold font-[Poppins] text-gray-500 dark:text-gray-400 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-focus:-top-4 peer-focus:text-sm transition-all">
               Nombre
             </label>
           </div>
@@ -80,7 +80,7 @@ const Contact = () => {
               className="w-full peer bg-transparent border-b-2 border-gray-300 dark:border-gray-600 focus:border-indigo-500 outline-none py-2 text-gray-800 dark:text-gray-100"
               placeholder=" "
             />
-            <label className="absolute left-0 top-0 text-gray-500 font-semibold font-[Poppins] dark:text-gray-400 peer-placeholder-shown:top-2 peer-placeholder-shown:text-base peer-focus:-top-4 peer-focus:text-sm transition-all">
+            <label className="absolute left-0 -top-4 font-semibold font-[Poppins] text-gray-500 dark:text-gray-400 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-focus:-top-4 peer-focus:text-sm transition-all">
               Email
             </label>
           </div>
@@ -96,7 +96,7 @@ const Contact = () => {
               className="w-full peer bg-transparent border-b-2 border-gray-300 dark:border-gray-600 focus:border-indigo-500 outline-none py-2 text-gray-800 dark:text-gray-100 resize-none"
               placeholder=" "
             />
-            <label className="absolute left-2 top-2 font-semibold font-[Poppins] text-gray-500 dark:text-gray-400 peer-placeholder-shown:top-8 peer-placeholder-shown:text-base peer-focus:-top-8 peer-focus:text-sm transition-all">
+            <label className="absolute left-0 -top-4 font-semibold font-[Poppins] text-gray-500 dark:text-gray-400 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-focus:-top-4 peer-focus:text-sm transition-all">
               Mensaje
             </label>
           </div>
