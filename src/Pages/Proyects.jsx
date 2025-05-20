@@ -77,21 +77,21 @@ const Projects = () => (
                 </p>
 
                 <div className="mt-auto flex items-center space-x-4">
-                  <span className="flex items-center text-black hover:underline">
+                  <span className="flex items-center text-gray-900 dark:text-gray-300 hover:underline">
                     <FiExternalLink className="mr-1" />
                     View Website
                   </span>
                   {proj.repoUrl && (
-                    <a
-                      href={proj.repoUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      onClick={e => e.stopPropagation()}
-                      className="flex items-center text-black dark:text-gray-300 hover:underline"
+                    <button
+                      onClick={e => {
+                        e.stopPropagation();
+                        window.open(proj.repoUrl, '_blank', 'noopener,noreferrer');
+                      }}
+                      className="flex items-center text-gray-900 dark:text-gray-300 hover:underline"
                     >
                       <FiGithub className="mr-1" />
                       Code
-                    </a>
+                    </button>
                   )}
                 </div>
               </div>

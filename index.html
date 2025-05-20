@@ -1,6 +1,20 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- 👇 Solución para evitar hydration error al usar dark mode -->
+    <script>
+      // Aplica la clase `dark` antes de que React se monte
+      if (
+        localStorage.theme === 'dark' ||
+        (!('theme' in localStorage) &&
+         window.matchMedia('(prefers-color-scheme: dark)').matches)
+      ) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    </script>
+
     <meta charset="UTF-8" />
     <link rel="icon" type="image/x-icon" href="/image/Favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
