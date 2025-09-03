@@ -18,6 +18,17 @@ const projects = [
     imageUrl: '/portafolio_v3/image/robfu.png',
     demoUrl: 'https://robfu.com'
   },
+
+  {
+    title: 'Asfaltos Kurmak',
+    description:
+      'Corporate website for Asfaltos Kurmak (paving, road maintenance, and asphalt sealing), built with a focus on conversion and performance. It integrates a service catalog, project gallery, testimonials, location and contact information (form + WhatsApp), as well as technical SEO, analytics, and responsive design for a seamless experience on mobile and desktop.',
+    imageUrl: '/portafolio_v3/image/asfaltos_Kurmak.png',
+    demoUrl: 'https://asfaltoskurmak.cl/',
+    repoUrl: 'https://github.com/Juanith0xx/asfaltos_kurmak',
+  },
+
+
 ];
 
 const cardVariants = {
