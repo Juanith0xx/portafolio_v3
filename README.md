@@ -8,7 +8,7 @@
 - **Estilos y Diseño**: Tailwind CSS, CSS3, HTML5
 - **Animaciones**: Framer Motion
 - **Backend y Bases de Datos**: Node.js, Express.js, MongoDB, Firebase, MySQL, PostgreSQL, SQLite
-- **Herramientas**: GitHub, Docker
+- **Herramientas**: GitHub, Docker , Figma
 
 ## ✨ Características
 
