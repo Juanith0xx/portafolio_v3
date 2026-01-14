@@ -15,7 +15,8 @@ const Navbar = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex justify-between items-center h-20">
           {/* Logo o nombre */}
-          <div className="flex items-center gap-4 pt-4 text-2xl font-[Poppins] font-bold text-white md:text-lg">
+          <div className="flex items-center gap-4 pt-4 text-2xl font-[Poppins] font-bold md:text-lg"
+          style={{ color: "var(--text)" }}>
             <img
               src="/portafolio_v3/image/Logo_p.png"
               alt="Logo"
@@ -25,13 +26,21 @@ const Navbar = () => {
           </div>
 
           {/* Menú desktop + toggle */}
-          <div className="hidden md:flex items-center space-x-6">
-            <ul className="flex space-x-6 font-[Poppins] text-white dark:text-gray-300">
+          <div className="hidden md:flex items-center space-x-6"
+          style={{ color: "var(--text)" }}
+          >
+            <ul className="flex space-x-6 font-[Poppins] dark:text-black"
+             style={{ color: "var(--text)" }}>
               {links.map(section => (
                 <li key={section}>
                   <a
                     href={`#${section}`}
-                    className="border-b-2 border-transparent hover:border-white transition-all pb-1 hover:font-semibold hover:text-white-fluor"
+                    className="border-b-2 border-transparent  transition-all pb-1 hover:font-semibold"
+                    style={{ 
+                      color: "var(--text-link)",
+                      backgroundColor: "(--button-hover-bg)"
+                    
+                    }}
                   >
                     {section.charAt(0).toUpperCase() + section.slice(1)}
                   </a>
@@ -58,7 +67,9 @@ const Navbar = () => {
 
       {/* Menú móvil */}
       {menuOpen && (
-        <div className="md:hidden text-white font-[Poppins] text-sm dark:bg-gray-900/50 px-4 py-2 space-y-2">
+        <div className="md:hidden text-white font-[Poppins] text-sm dark:bg-gray-900/50 px-4 py-2 space-y-2"
+        style={{ color: "var(--text)" }}
+        >
           <ul>
             {links.map(section => (
               <li key={section}>
@@ -74,7 +85,7 @@ const Navbar = () => {
           </ul>
 
           {/* Toggle en menú móvil */}
-          <div className="pt-2">
+          <div className="pt-4 w-full flex justify-center">
             <ThemeToggle />
           </div>
         </div>

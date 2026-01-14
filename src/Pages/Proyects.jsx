@@ -42,16 +42,18 @@ const cardVariants = {
 };
 
 const Projects = () => (
-  <section id="projects" className="relative py-20 mt-4 bg-gradient-to-b from-black/40 via-transparent to-black/30 dark:bg-gray-900 overflow-hidden">
+  <section id="projects" className="relative py-20 mt-4 overflow-hidden">
     {/* <FallingCircles /> eliminado */}
 
     <div className="max-w-6xl mx-auto px-4">
+      
       <motion.h2
         className="text-3xl md:text-4xl font-bold font-[Poppins] text-center text-white dark:text-white mb-12"
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.8 }}
+        transition={{ duration: 0.8 }} 
+        style={{ color: "var(--text)" }}
       >
         Featured Projects
       </motion.h2>
@@ -72,7 +74,8 @@ const Projects = () => (
               whileInView="visible"
               whileHover="hover"
               viewport={{ once: true }}
-              className="bg-gray-50 dark:bg-gray-800 rounded-2xl overflow-hidden cursor-pointer"
+              className="rounded-2xl overflow-hidden cursor-pointer"
+              style={{ backgroundColor: "var(--card-bg)" }}
             >
               <div
                 className="h-48 bg-center bg-cover"
@@ -80,15 +83,20 @@ const Projects = () => (
               />
 
               <div className="p-6 flex flex-col h-full">
-                <h3 className="text-2xl font-semibold font-[Poppins] underline text-gray-950 dark:text-white mb-2">
+                <h3 className="text-2xl font-semibold font-[Poppins] underline mb-2" 
+                style={{ color: "var(--card-text)" }}
+                >
                   {proj.title}
                 </h3>
-                <p className="font-[Poppins] text-gray-600 dark:text-gray-300 mb-4 flex-grow">
+                <p className="font-[Poppins] mb-4 flex-grow"
+                style={{ color: "var(--card-text)" }}
+                >
                   {proj.description}
                 </p>
 
                 <div className="mt-auto flex items-center space-x-4">
-                  <span className="flex items-center text-gray-900 dark:text-gray-300 hover:underline">
+                  <span className="flex items-center hover:underline"
+                  style={{ color: "var(--card-text)" }} >
                     <FiExternalLink className="mr-1" />
                     View Website
                   </span>
@@ -98,7 +106,8 @@ const Projects = () => (
                         e.stopPropagation();
                         window.open(proj.repoUrl, '_blank', 'noopener,noreferrer');
                       }}
-                      className="flex items-center text-gray-900 dark:text-gray-300 hover:underline"
+                      className="flex items-center hover:underline"
+                      style={{ color: "var(--card-text)" }}
                     >
                       <FiGithub className="mr-1" />
                       Code

@@ -36,7 +36,7 @@ const cardVariants = {
 
 
 const Services = () => (
-  <section id="services" className="py-20 mt-4 bg-gradient-to-t from-black/50 via-transparent to-black/50 dark:bg-gray-900">
+  <section id="services" className="py-20 mt-4 ">
     <div className="max-w-5xl mx-auto px-4 text-center">
       <motion.h2
         className="text-3xl md:text-4xl font-bold font-[Poppins] text-white dark:text-white mb-12"
@@ -44,6 +44,7 @@ const Services = () => (
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8 }}
+        style={{ color: "var(--text)" }}
       >
         My Services
       </motion.h2>
@@ -57,9 +58,12 @@ const Services = () => (
             whileInView="visible"
             whileHover="hover"
             viewport={{ once: true }}
-            className="bg-white dark:bg-gray-800 rounded-2xl p-6 flex flex-col items-center text-center cursor-pointer"
+            className="bg-white rounded-2xl p-6 flex flex-col items-center text-center cursor-pointer"
+            style={{ color: "var(--text)" }}
           >
-            <div className="text-[#007595] mb-4">{svc.icon}</div>
+            <div className=" mb-4"
+            style={{ color: "var(--button-bg" }}
+            >{svc.icon}</div>
             <h3 className="text-xl font-semibold text-gray-800 dark:text-white mb-2">
               {svc.title}
             </h3>
@@ -68,7 +72,8 @@ const Services = () => (
             </p>
             <a
               href="#contact"
-              className="mt-auto inline-block text-[#007595] font-[Poppins] font-medium hover:underline hover:text-xl"
+              className="mt-auto inline-block font-[Poppins] font-medium hover:underline hover:text-xl"
+              style={{ color: "var(--button-bg" }}
             >
               ¡I love you!!
             </a>

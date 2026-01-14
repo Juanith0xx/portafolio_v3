@@ -69,12 +69,18 @@ const SkillGrid = () => (
   <div className="grid gap-6 justify-center font-bold font-[Poppins] md:grid-cols-2">
     {skills.map((group, index) => (
       <div key={index}>
-        <h3 className="text-xl font-semibold font-[Poppins] underline text-white dark:text-white mb-4">{group.category}</h3>
+        <h3 className="text-xl font-semibold font-[Poppins] underline mb-4"
+        style={{ color: "var(--text)" }}
+        >{group.category}</h3>
         <div className="flex flex-wrap gap-4 justify-center text-center pb-4 pt-2">
           {group.items.map((item, i) => (
             <div
               key={i}
-              className="relative group w-16 h-16 flex items-center justify-center bg-[#007595] text-white font-[Poppins] dark:bg-gray-700 rounded-full shadow-md cursor-pointer transform transition-transform duration-300 hover:scale-130"
+              className="relative group w-16 h-16 flex items-center justify-center font-[Poppins] dark:bg-gray-700 rounded-full shadow-md cursor-pointer transform transition-transform duration-300 hover:scale-130"
+               style={{
+               backgroundColor: "var(--button-bg)",
+               color: "var(--button-text)"
+              }}
             >
               {item.icon}
               <div className="absolute opacity-0 group-hover:opacity-100 transition-opacity duration-300 bottom-full left-1/2 transform -translate-x-1/2 mb-2 bg-white dark:bg-gray-900 text-sm text-gray-800 dark:text-gray-200 p-2 rounded-lg shadow-lg z-20 w-32 text-center">

@@ -26,7 +26,7 @@ const About = () => {
   ];
 
   return (
-    <section id="about" className="relative mt-6 py-20  bg-gradient-to-r from-black/50 via-transparent to-black/50  dark:bg-gray-900 overflow-hidden">
+    <section id="about" className="relative mt-6 py-20 dark:bg-gray-900 overflow-hidden">
       {/* Formas animadas */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         {shapes.map((shape, i) => {
@@ -72,7 +72,8 @@ const About = () => {
 
       <div className="max-w-5xl mx-auto px-4 text-center relative z-10">
         <motion.h2
-          className="text-3xl md:text-4xl font-black text-white dark:text-white mb-4"
+          className="text-3xl md:text-4xl font-black dark:text-white mb-4"
+          style={{ color: "var(--text)" }}
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
@@ -83,6 +84,7 @@ const About = () => {
 
         <motion.p
           className="text-lg text-white font-semibold font-[Poppins] dark:text-gray-300 mb-10 leading-relaxed md:text-lg "
+          style={{ color: "var(--text)" }}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
@@ -101,6 +103,7 @@ const About = () => {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1, ease: 'easeOut', delay: 1 }}
+          
         >
           <SkillGrid />
         </motion.div>

@@ -32,18 +32,18 @@ const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 mt-4 bg-gradient-to-br from-black/50 via-transparent to-black/50 
-                        text-white overflow-hidden dark:bg-gray-900">
+    <section id="contact" className="py-20 mt-4 text-white overflow-hidden dark:bg-gray-900">
       <div className="max-w-xl mx-auto px-4">
         <motion.h2
-          className="text-3xl font-black font-[Poppins] text-white dark:text-white mb-8 text-center"
+          className="text-3xl font-black font-[Poppins] mb-8 text-center"
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
+          style={{ color: "var(--text)" }}
         >
           
-        contact me
+        Contact me
         </motion.h2>
         <motion.form
           ref={formRef}
@@ -55,17 +55,21 @@ const Contact = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           {/* Nombre */}
-          <div className="relative">
+          <div className="relative"
+          style={{ color: "var(--card-text-secondary)" }}
+          >
             <input
               type="text"
               name="nombre"
               value={formData.nombre}
               onChange={handleChange}
               required
-              className="w-full peer bg-transparent border-b-2 border-gray-300 dark:border-gray-600 focus:border-indigo-500 outline-none py-2 text-gray-800 dark:text-gray-100"
+              className="w-full peer bg-transparent border-b-2 border-gray-300 dark:border-gray-600 focus:border-indigo-500 outline-none py-2  dark:text-gray-100"
               placeholder=" "
             />
-            <label className="absolute left-0 -top-4 font-semibold font-[Poppins] text-gray-500 dark:text-gray-400 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-focus:-top-4 peer-focus:text-sm transition-all">
+            <label className="absolute left-0 -top-4 font-semibold font-[Poppins] peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-focus:-top-4 peer-focus:text-sm transition-all"
+            style={{ color: "var(--card-text-secondary)" }}
+            >
               Name
             </label>
           </div>
@@ -81,7 +85,9 @@ const Contact = () => {
               className="w-full peer bg-transparent border-b-2 border-gray-300 dark:border-gray-600 focus:border-indigo-500 outline-none py-2 text-gray-800 dark:text-gray-100"
               placeholder=" "
             />
-            <label className="absolute left-0 -top-4 font-semibold font-[Poppins] text-gray-500 dark:text-gray-400 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-focus:-top-4 peer-focus:text-sm transition-all">
+            <label className="absolute left-0 -top-4 font-semibold font-[Poppins] peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-focus:-top-4 peer-focus:text-sm transition-all"
+            style={{ color: "var(--card-text-secondary)" }}
+            >
               Email
             </label>
           </div>
@@ -97,7 +103,9 @@ const Contact = () => {
               className="w-full peer bg-transparent border-b-2 border-gray-300 dark:border-gray-600 focus:border-indigo-500 outline-none py-2 text-gray-800 dark:text-gray-100 resize-none"
               placeholder=" "
             />
-            <label className="absolute left-0 -top-4 font-semibold font-[Poppins] text-gray-500 dark:text-gray-400 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-focus:-top-4 peer-focus:text-sm transition-all">
+            <label className="absolute left-0 -top-4 font-semibold font-[Poppins] text-gray-500 dark:text-gray-400 peer-placeholder-shown:top-4 peer-placeholder-shown:text-base peer-focus:-top-4 peer-focus:text-sm transition-all"
+            style={{ color: "var(--card-text-secondary)" }}
+            >
               Message
             </label>
           </div>
@@ -105,9 +113,13 @@ const Contact = () => {
           {/* Botón */}
           <motion.button
             type="submit"
-            className="w-full bg-cyan-700 text-white font-semibold font-[Poppins] py-3 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition"
+            className="w-full font-semibold font-[Poppins] py-3 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition"
             whileHover={{ scale: 1.02 }}
             whileTap={{ scale: 0.98 }}
+            style={{ color: "var(--button-text)" ,
+              backgroundColor: "var(--button-bg)"
+            }}
+            
           >
             {status === 'sending' ? 'Enviando...' : 'Send message'}
           </motion.button>

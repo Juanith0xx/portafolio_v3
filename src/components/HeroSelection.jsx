@@ -31,27 +31,24 @@ const HeroSelection = () => {
 
   return (
     <section className="relative min-h-screen flex items-center justify-center 
-                        bg-gradient-to-br from-black/50 via-transparent to-black/50 
-                        text-white overflow-hidden">
+                        overflow-hidden"
+                        style={{ color: "var(--text)" }}>
       {/* Figuras animadas */}
       {shapes.map(({ type, size, left, custom }, i) => (
         <motion.div
           key={i}
-          custom={custom}
-          variants={fallAnimation}
-          initial="initial"
-          animate="animate"
-          className={`
-            absolute
-            ${type === 'circle' ? 'rounded-full' : 'rounded-sm'}
-            bg-[#007595]/30 bg-opacity-80
-          `}
-          style={{
-            width: size,
-            height: size,
-            left,
-            top: -size,
-            filter: 'drop-shadow(0 0 10px white)',
+    custom={custom}
+    variants={fallAnimation}
+    initial="initial"
+    animate="animate"
+    className={`${type === 'circle' ? 'rounded-full' : 'rounded-sm'} absolute`}
+    style={{
+      width: size,
+      height: size,
+      left,
+      top: -size,
+      backgroundColor: 'var(--shape-bg)',
+      filter: 'drop-shadow(0 0 10px var(--text))',
           }}
         />
       ))}
@@ -78,8 +75,11 @@ const HeroSelection = () => {
 
         <motion.a
           href="#contact"
-          className="inline-block bg-[#007595] text-white font-[Poppins] font-semibold py-3 px-6 
-                     rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition"
+          className="inline-block font-[Poppins] font-semibold py-3 px-6 rounded-lg shadow-lg hover:shadow-xl transform hover:scale-105 transition"
+          style={{
+          backgroundColor: "var(--button-bg)",
+          color: "var(--button-text)"
+          }}
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 1.2, ease: 'easeOut' }}

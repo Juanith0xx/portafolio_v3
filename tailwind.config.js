@@ -4,18 +4,18 @@ export default {
     "./index.html",
     "./src/**/*.{js,jsx}"
   ],
-  darkMode: 'class', // Asegúrate de tener esto
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
         light: {
-          background: '#f9fafb',
-          text: '#111827',
-          accent: '#2563eb',
+          background: '#ffffff',   // blanco
+          text: '#b45309',         // cobre (Tailwind amber-700)
+          accent: '#d97706',       // amarillo/cobre más vivo
         },
         dark: {
-          background: '#121212',
-          text: '#e0e0e0',
+          background: '#0e0e0e',
+          text: '#f0f0f0',
           accent: '#00ffff',
         },
       },
